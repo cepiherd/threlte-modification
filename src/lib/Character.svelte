@@ -173,7 +173,7 @@
 			rotation={{ y: DEG2RAD * 180 }}
 			bind:gltf={$gltf}
 		>
-			<Mesh
+			<!-- <Mesh
 				geometry={new SphereBufferGeometry(0.1, 10, 10)}
 				material={new MeshStandardMaterial({ color: "red" })}
 				position={{ x: 0, y: 1, z: 5 }}
@@ -186,7 +186,7 @@
 			<Mesh
 				geometry={new SphereBufferGeometry(0.1, 10, 10)}
 				material={new MeshStandardMaterial({ color: "blue" })}
-			/>
+			/> -->
 		</GLTF>
 	</Group>
 </RigidBody>

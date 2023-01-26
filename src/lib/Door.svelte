@@ -81,7 +81,23 @@
 				class:closed={!open}
 				class:open
 			>
-				{open ? 'Terbuka' : 'Terkunci'}
+				{open ? 'Open' : 'Terkunci'}
+			</small>
+
+			<small
+				in:blur={{
+					amount: 15,
+					duration: 300
+				}}
+				out:blur={{
+					amount: 15,
+					duration: 300
+				}}
+				class="door2"
+				class:closed={!open}
+				class:open
+			>
+				Welcome to Cepi 
 			</small>
 		{/key}
 	</HTML>
@@ -125,6 +141,18 @@
 		border-radius: 0.375rem;
 		position: absolute;
 		transform: translateX(-50%) translateY(-50%);
+	}
+
+	.door2 {
+		padding-left: 0.5rem;
+		width: 100px;
+		padding-right: 0.5rem;
+		padding-top: 0.25rem;
+		padding-bottom: 0.25rem;
+		color: rgb(255, 255, 255);
+		border-radius: 0.375rem;
+		position: absolute;
+		transform: translateX(80%) translateY(-50%);
 	}
 
 	.closed {
