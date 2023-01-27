@@ -24,7 +24,7 @@
 	export let height = 1.7;
 	export let speed = 6;
 	const name = "Xbot";
-	const url = './Paladin.glb';
+	const url = './cepi.glb';
 
 	const { gltf, actions } = useGltfAnimations(({ actions }) => {
 		// socerer actions: Armature|mixamo.com|Layer0, Attack, Dance, Death, Idle, Run, Walk
@@ -151,13 +151,14 @@
 <!-- <RigidBody bind:rigidBody {position} enabledRotations={[false, false, false]}> -->
 	
 	<AutoColliders shape={"cuboid"}>
-		<Group position={{ y: 0.2, x: 0.9, z: 15 }}>
+		<Group position={{ y: 2, x: 0.9, z: -10 }}>
 			<GLTF
 				{url}
 				receiveShadow
 				castShadow
+				scale={2}
 				bind:scene
-				rotation={{ y: 2 }}
+				rotation={{ y:-0.2 }}
 				bind:gltf={$gltf}
 			/>
 		</Group>

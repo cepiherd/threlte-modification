@@ -24,7 +24,7 @@
 	export let height = 1.7;
 	export let speed = 6;
 	const name = "Xbot";
-	const url = "https://threejs.org/examples/models/gltf/Xbot.glb";
+	const url = "./Xbot.glb";
 
 	const { gltf, actions } = useGltfAnimations(({ actions }) => {
 		// socerer actions: Armature|mixamo.com|Layer0, Attack, Dance, Death, Idle, Run, Walk
